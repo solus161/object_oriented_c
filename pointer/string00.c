@@ -8,7 +8,7 @@ int main(void) {
     puts(strA); /* show string A */
     pA = strA; /* point pA at string A */
     printf("%p\n", &strA);
-    printf("%p\n", pA);
+    printf("%c\n", *pA);
     puts(pA); /* show what pA is pointing to */
     pB = strB; /* point pB at string B */
     // putchar('\n'); /* move down one line on the screen */
