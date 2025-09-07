@@ -12,5 +12,5 @@ TARGETAPP	= test_calculator.o
 $(TARGETLIB):	$(subst .c,.o,$(SOURCELIB))
 	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ $^ -lm
 
-# $(TARGETAPP):	$(SOURCEAPP)
-# 	$(CC) $(SOURCEAPP) -L. -lcalculator -o $(TARGETAPP)
+$(TARGETAPP):	$(SOURCEAPP)
+	$(CC) $(SOURCEAPP) -L. -lcalculator -o $(TARGETAPP)
