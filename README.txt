@@ -4,3 +4,12 @@ gcc test_listint.c -L /home/quangnguyen/projects/ooc/python_data_structure -llis
 gcc -shared -fPIC -o libnew.so new.c
 gcc -shared -fPIC -o libpystruct.so pystruct.c
 gcc test_pystruct.c -L /home/quangnguyen/projects/ooc/python_data_structure -lnew -lpystruct -o test_pystruct
+
+# Calculator
+Dont forget to add path of the project to `LD_LIBRARY_PATH`:
+```
+echo $LD_LIBRARY_PATH
+xport LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/projects/object_oriented_c/calculator
+```
+
+Then you can run `./test_calculator.o`
